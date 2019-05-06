@@ -1,0 +1,1 @@
+skopeo copy docker://docker-registry-default.34.74.193.208.nip.io:80/myproject/centos  docker://docker.io/imasug/test --src-tls-verify=false --src-creds=developer:rD7UcbR2hTiZ3bVAfHeJ_QeU0eJFRuIsHNRrldJAvB0 --dest-tls-verify=false --dest-creds=imasug:Imasug123@C

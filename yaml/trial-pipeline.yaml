@@ -1,0 +1,19 @@
+kind: "BuildConfig"
+apiVersion: "v1"
+metadata:
+  name: "trial-pipeline"
+spec:
+  strategy:
+    jenkinsPipelineStrategy:
+      jenkinsfile: |-
+        pipeline {
+            agent any
+            stages {
+                stage('stage1') {
+                    steps {
+                      sh 'echo trial'
+                    }
+                }
+            }
+        }
+      type: JenkinsPipeline
